@@ -11,9 +11,6 @@ def won?(board)
     position_1 = position_taken?(board,win_index[0]) ? board[win_index[0]] : 1
     position_2 = position_taken?(board,win_index[1]) ? board[win_index[1]] : 3
     position_3 = position_taken?(board,win_index[2]) ? board[win_index[2]] : 1
-    puts position_1
-    puts position_2
-    puts position_3
     position_1 == position_2 && position_2 == position_3
   end
 end
