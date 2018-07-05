@@ -20,3 +20,7 @@ def full?(board)
     square == "X" || square == "O"
   end
 end
+
+def draw?(board)
+  (!won?(board) && full?(board))
+end
